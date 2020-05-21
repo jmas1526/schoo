@@ -1,0 +1,46 @@
+package Ex12;
+
+public class Account {
+
+	private static int counter = 0;
+
+	private String name;
+	private String no;
+	private long balance;
+	private int id;
+
+	Account(String n, String num, long z) {
+		name = n;
+		no = num;
+		balance = z;
+	}
+
+	{
+		System.out.println("明解銀行での口座開設ありがとうございます。");
+		id = ++counter;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getNo() {
+		return no;
+	}
+
+	public long getBalance() {
+		return balance;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void deposit(long k) {
+		balance += k;
+	}
+
+	public void withdraw(long k) {
+		balance -= k;
+	}
+}
