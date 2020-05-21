@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class Q07_06
+ {
+	public static void main(String[] args){
+		Scanner keyboardIn = new Scanner(System.in);
+		System.out.print("âΩåéÅHÅF");
+		printSeason(keyboardIn.nextInt());
+	}
+	
+	public static void printSeason(int m){
+		if(0 < m && m < 13) {
+			switch (m / 3) {
+			case 0: System.out.println("ì~");
+				break;
+			case 1: System.out.println("èt");
+				break;
+			case 2: System.out.println("âƒ");
+				break;
+			case 3: System.out.println("èH");
+				break;
+			default: System.out.println("ì~");
+				break;
+			}
+		}else System.out.println();
+	}
+}
